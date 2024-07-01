@@ -106,7 +106,7 @@ h1,p,.Booking-an-appointment{
     z-index: 2; 
 }
 
-
+/* */
 /* Search Bar Style */
 .search-bar {
     position: relative;
@@ -121,6 +121,7 @@ h1,p,.Booking-an-appointment{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 2; 
 }
+/* */
 
 .speciality-dropdown, .search-input, .search-button {
     padding: 10px;
