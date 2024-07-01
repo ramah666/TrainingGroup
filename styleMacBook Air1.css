@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav {
+    background-color: #ffffff;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    display: fixed;
+    z-index: 2; 
+}
+
+nav .SECOND {
+    color: rgb(16, 1, 92);
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+nav .opi {
+    color: rgb(16, 1, 92);
+    font-weight: bold;
+    font-size: .5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav .SignUp {
+    background: rgb(43, 43, 251);
+}
+
+footer {
+    text-align: center;
+    background-color: #CFDAE0;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.home-container1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+    background-color: blue;
+    color: white; 
+    padding: 0;
+    text-align: center;
+    position: relative;
+    
+}
+h1,p,.Booking-an-appointment{
+    padding: 15px;
+    margin: 30px;
+    z-index: 2; 
+}
+.Booking-an-appointment{
+    background: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 8px;
+    border : none;
+    margin-left: 50px;
+}
+.home-container2{
+   
+    text-align: left;
+}
+.home-container1 img {
+    max-width: 50%; 
+    z-index: 2; 
+}
+.circle{
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 450px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.353); 
+    border-radius: 50%;
+    z-index: 1; 
+}
+.circle2{
+    position: absolute;
+    bottom: -150px;
+    right: 70px;
+    width: 450px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.353); 
+    border-radius: 50%;
+    z-index: 1; 
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.search-bar {
+    position: absolute;
+    bottom: -30px; 
+    left: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    width: 90%; 
+    background: white;
+    border: 2px solid ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; 
+}
+
+.speciality-dropdown, .search-input, .search-button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    
+}
+
+.speciality-dropdown {
+    flex: 1; 
+    background-color: #e4e8ed;
+
+}
+.speciality-dropdown option{
+    background-color: #e4e8ed;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+.search-input {
+    flex: 3; 
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+
+}
+
+.search-button {
+    flex: .5;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px; 
+}
+
+
+.search-button:hover {
+    background: #0056b3; /* Darken the button on hover */
+}
+
+/*------ top doctors section------*/
+.top-doctors {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.top-doctors h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(16, 1, 92); /* Matching the color scheme */
+}
+
+.doctors-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.doctor-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.doctor-card img {  
+    width: 100%;
+    margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.doctor-card h3 {
+    font-size: 1.2em;
+    margin-bottom: -10px;
+    margin-top: -10px;}
+
+.doctor-card p {
+    font-size: 0.9em;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    text-align: left;
+}
+
+.doctor-card .Booking-an-appointment {
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.doctor-card .Booking-an-appointment:hover {
+    background: #0056b3;
+}
+/* Discover Section Styling */ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .benefits-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .benefit {
+            background: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin: -10px;
+        }
+
+        .benefit h2 {
+            font-size: 1.5em;
+            color: #10105c;
+            margin-bottom: 20px;
+        }
+
+        .benefit p {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .benefit .view-all-button {
+            background: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+            border-radius: 8px;
+            border: none;
+            padding: 10px 20px;
+            transition: background 0.3s ease;
+        }
+
+        .benefit .view-all-button:hover {
+            background: #0056b3;
+        }
+
+        #benefitTitle {
+            color: #0056b3;
+        }
+        .benefitPara {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 20px;        }
+
+
+        /* dashed Horizontal line */
+        .dashed-line {
+            text-align: center;
+            border: 0;
+            height: 1px;
+            background: #000;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .dashed-line::before {
+            content: '---';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 0 10px;
+        }

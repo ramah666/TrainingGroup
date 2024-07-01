@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:verdana;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+     position: relative;
+    overflow-x: hidden;
+}
+
+
+
+
+nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 30px 10px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+
+nav .SECOND{
+    color: rgb(16, 1, 92);
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+nav .opi{
+    color: rgb(16, 1, 92);
+    font-weight: bold;
+    font-size: .5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5px;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+nav .SignUp{
+    background: #f7f8fa
+}
+
+footer{ 
+    text-align: center;
+    background-color: #77baf8;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: small;
+}
+
+.circle{
+    position: absolute;
+    top: -150px;
+    left: -95px;
+    width: 450px;
+    height: 450px;
+    background: rgba(113, 161, 208, 0.5); 
+    border-radius: 50%;
+    z-index: -1; 
+}
+
+.circle-2{
+    position: absolute;
+    top: 120px;
+    left: -200px;
+    width: 380px;
+    height: 380px;
+    background: rgba(113, 161, 208, 0.5); 
+    border-radius: 50%;
+    z-index: -1; 
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.Login-Container {
+    background: #ffffff;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.232);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
