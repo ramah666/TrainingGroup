@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SECOND OPI</title>
-    <link rel="stylesheet" href="styleMacBook Air1.css">
+    <link rel="stylesheet" href="Booking-Appointment.css">
+    <link rel="stylesheet" href="UpperBar-SearchBar Footer.css">
 </head>
 
 <body>
-    <body>
-        <!--Jana-->
+        <!--Header Bar -->
         
-        <div class="container" >
             <header>
                 <nav>
                     <a href="#" class="SECOND">SECOND <span class="opi">OPI</span></a>
@@ -23,4 +22,72 @@
                         <li><a href="#" class="SignUp">Sign Up</a></li>
                     </ul>
                 </nav>
+                
             </header>
+            <!--Doctor information-->
+            <div  class ="Booking">
+            <img src="images/circle.jpg" >
+            <div class="doctorInfo">
+                <h2 class="doctorName">Dr. Samantha Ruthprabhu</h2>
+                <p class="DoctorSpecialty">Dentist<br>
+                4-5 years Experience</p>
+                <p class="DoctorDescription">Dr Shabana Shamsuddin believes in the goodness and potential inherent in all human beings. She offers her unconditional positive regard in her professional therapeutic practice for her clients to rise ...</p>
+            </div>
+            <div class="feesRating">
+                <h4>$45 Consultation Fees</h4>
+                <h5>4.5/5 Rating</h5>
+            </div>
+            </div>
+            <!--Booking form-->
+            <div  class="booking-form">
+                <h1>Book Appointment With Samantha Ruthprabhu</h1>
+                 <form>
+        <div class="form-group">
+            <div>
+                <label for="session-type">Type of Session</label>
+                <select id="session-type" name="session-type">
+                    <option value="consultation">Consultation</option>
+                    <option value="follow-up">Follow-up</option>
+                    <option value="routine-checkup">Routine Checkup</option>
+                </select>
+            </div>
+            <div>
+                <label for="appointment-date">Date of Appointment</label>
+                <input type="date" id="appointment-date" name="appointment-date">
+            </div>
+        </div>
+        <div class="reason">
+            <label for="appointment-reason">Reason for Appointment</label>
+            <textarea id="appointment-reason" name="appointment-reason" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="appointment-time">Time of Appointment</label>
+                <select id="appointment-time" name="appointment-time">
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="01:00">01:00 PM</option>
+                    <option value="02:00">02:00 PM</option>
+                    <option value="03:00">03:00 PM</option>
+                    <option value="04:00">04:00 PM</option>
+                    <option value="05:00">05:00 PM</option>
+                </select>
+            </div>
+            <div>
+                <label for="appointment-reports">Reports</label>
+                <input type="file" id="appointment-reports" name="appointment-reports" multiple>
+            </div>
+        </div>
+    </form>
+    <!--Payment Details-->
+    <div class="payment-details">
+        <div class="payment-Title">Payment Details</div>
+        <div class="line-item">Session fee: $200</div>
+        <div class="line-item">Taxes: $2</div>
+        <div class="total-amount">Total fee: $202</div>
+        <a href="#" class="proceed-button">Proceed to Payment</a>
+    </div>
+            </div>
+        </body>
