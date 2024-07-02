@@ -1,1 +1,48 @@
 /* */
+
+.inline-grid-container {
+    display: inline-grid;
+    grid-template-columns: auto 1fr auto; /* Adjust column widths as needed */
+    grid-gap: 10px; /* Adjust spacing between elements */
+    align-items: center; /* Vertically center elements */
+  }
+  
+  .circle-image {
+    width: 50px; /* Adjust circle size */
+    height: 50px; /* Adjust circle size */
+    border-radius: 50%;
+    background-color: #ddd; /* Set default background color */
+  }
+  
+  /* Optional: Add an icon or image inside the circle */
+  .circle-image:after {
+    content: ""; /* Placeholder content for icons */
+    display: inline-block;
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    background-image: url("path/to/your/icon.png"); /* Replace with your icon URL */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the icon within the circle */
+  }
+  
+  .text-container {
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .button-container {
+    text-align: center; /* Center button horizontally */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px; /* Adjust button padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0062cc; /* Change button color on hover */
+  }
+  

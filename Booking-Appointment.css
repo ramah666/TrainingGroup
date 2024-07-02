@@ -1,0 +1,109 @@
+
+.Booking {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+        margin-top: 140px; 
+  
+}
+
+.Booking img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.doctorInfo {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.feesRating {
+    flex: 1;
+    text-align: left;
+}
+
+.doctorName {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.DoctorSpecialty, .DoctorDescription {
+    margin: 10px 0;
+}
+
+.feesRating h4, .feesRating h5 {
+    margin: 5px 0;
+}
+/*Booking form*/
+.booking-form {
+    
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 2px;
+}
+.booking-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.booking-form .form-group div {
+    flex: 1;
+    margin-right: 10px;
+}
+.booking-form .form-group div:last-child {
+    margin-right: 0;
+}
+.booking-form select,
+.booking-form input[type="date"],
+.booking-form textarea,
+.booking-form input[type="file"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*payment details*/
+.payment-details {
+    width: 300px;
+    background-color: #ffffff;
+    margin: 0 ;
+    padding: 20px;
+   
+}
+.payment-Title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.line-item {
+    margin-bottom: 8px;
+}
+.total-amount {
+    font-size: 18px;
+    margin-top: 10px;
+    border-top: 1px dashed #cccccc;
+    padding-top: 10px;
+}
+.proceed-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4c5caf;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
