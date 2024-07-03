@@ -1,0 +1,188 @@
+
+body {
+    font-family: 'Poppins';
+    background-color: #eff1f871;
+
+}
+
+/* about us style */ 
+.about-us-section {
+    padding: 20px;
+   /* background-color: #eff1f871; */
+}
+
+.about-us-section h1 {
+    margin-bottom: -13px; 
+    margin-top: -13px;
+    font-size: 24px;
+    
+}
+
+.about-us-section p {
+    margin-top: -1px; 
+    font-size:l;
+    line-height: 1.5;
+}
+/* ------------------------------- */
+
+/* Profile section container */
+.profile-section {
+    display: flex;
+    align-items: center;
+    /* background-color: #eff1f871; */
+    /* border-radius: 10px; /* Rounded corners */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */ /* Optional: subtle shadow for better visualization */
+    margin-top: 20px; /* Space above the profile section */
+}
+
+/* Profile image styling */
+.profile-image {
+    flex: 0 0 auto; /* Prevent the image from shrinking or growing */
+    margin-right: 20px; /* Space between the image and the content */
+    border-radius: 10px; /* Rounded corners for the image container */
+    overflow: hidden; /* Ensure the image respects the border radius */
+}
+
+.profile-image img {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Profile content styling */
+.profile-content {
+    flex: 1; /* Allow the content to take up the remaining space */
+    border-radius: 10px; /* Rounded corners for the content container */
+}
+
+.founder-title {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    padding-bottom: 0;
+    
+}
+
+.founder-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+
+}
+
+.description {
+    font-size:larger;
+    color: #666;
+    margin: 10px 0 0;
+    padding-top: 40px;
+}
+/* Second Profile */ 
+/* ------------------------------------------------------------------------------- */
+.Co-Founder-Section {
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-section2 {
+    display: flex;
+    align-items: center;
+   /*  background-color: #eff1f871; */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.profile-image2 {
+    flex: 0 0 auto; 
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.profile-image2 img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px; /* Ensures image corners are rounded */
+}
+
+.profile-content2 {
+    flex: 1;
+}
+
+.founder-title2 {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    text-align: right;
+    padding-right: 30px;;
+    padding-bottom: 0;
+
+}
+
+.founder-name2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: right;
+    padding-right: 30px;;
+}
+
+.description2 {
+    font-size: larger;
+    color: #666;
+    margin: 10px 0 0;
+    text-align: right;
+}
+
+/* Members */ 
+.top-doctors {
+    text-align: center;
+    margin: 50px 0;
+    /*background-color: #eff1f871; */
+}
+
+.doctors-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.doctor-card {
+   background-color: #eff1f871; 
+    border-radius: 10px;
+    box-shadow: h-shadow v-shadow blur spread color inset;
+    text-align: left;
+    width: 300px;
+    padding: 10px;
+    padding-bottom: 0; /* Ensure no padding at the bottom */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.doctor-card img {  
+    width: 100%;
+    margin-bottom: 0; /* Remove bottom margin from the image */
+    border-radius: 10px; /* Ensure the image has rounded corners */
+    display: block;
+
+}
+
+.doctor-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+
+.doctor-card p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 0cap; /* Corrected padding property */
+    padding-left: 0cap;
+    margin-top: 0; 
+    padding-top: 0; 
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOND OPI</title>
+    <link rel="stylesheet" href="Payment-details.css">
+    <link rel="stylesheet" href="UpperBar-SearchBar Footer.css">
+
+</head>
+
+<body>
+        <!--Header Bar -->
+        
+            <header>
+                <nav>
+                    <a href="#" class="SECOND">SECOND <span class="opi">OPI</span></a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Find A Doctor</a></li>
+                        <li><a href="#">Specialties</a></li>
+                        <li><a href="#">About US</a></li>
+                        <li><a href="#" class="SignUp">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div>
+                <h1 class="title">Payment</h1>
+                <p>Simplify transactions with secure and seamless payment details integration.</p>
+            </div>
+            <div class="Payment">
+                <div class="Card-details">
+                    <form>
+                        <label>Enter your payment details </label>
+                        <div class="form-group">
+                            <input type="text" id="card_number" name="card_number" placeholder="Card Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="card_holder" name="card_holder" placeholder="Cardholder Name" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="expiry-cvv">
+                                <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YYYY" required>
+                                <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="CVV" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="payment-details">
+                    <div class="payment-Title">Summary</div>
+                    <div class="line-item">Session fee: $200</div>
+                    <div class="line-item">Taxes: $2</div>
+                    <div class="total-amount">Total fee: $202</div>
+                    <a href="#" class="proceed-button">Proceed to Payment</a>
+                </div>
+            </div>
+        </body>
+ </html>
