@@ -2,57 +2,98 @@
 
 .inline-grid-container {
   display: flex;
-  justify-content: center;
-  margin-left: 2cm;
-  margin-right: 2cm;
+  justify-content: space-evenly;
+  margin-left: 0.5 cm;
+  margin-right: 0.5 cm;
   flex-wrap: nowrap;
+  max-width: 1500px;
+  max-height: 250px;
+  margin-top: -1%;
+  margin-bottom: -2.5%;
+
 }
 
 .circle-image {
-  max-width: 200px;
-  /* Adjust circle size */
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 250px;
   border-radius: 50%;
 }
 
 .text-container {
-  margin-right: 3cm;
-  /* Add spacing between text and button */
-}
-
-.button-container {
-  text-align: center;
-  /* Center button horizontally */
-}
-
-button {
-  font-family: Futura;
-  font-size: 18.83px;
-  font-weight: 500;
-  line-height: 25px;
-  text-align: center;
-  width: 256px;
-  height: 69px;
-  top: 176px;
-  left: 883px;
-  padding: 22.37px 48.98px 21.63px 49.02px;
-  border-radius: 3.27px ;
-  background-color:#1D63D3;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #0e4c8f;
-  /* Change button color on hover */
+  position: relative;
+  justify-content: left;
+  max-width: 500px;
+  max-height: 250px;
+  margin-left: -9%;
+  margin-right: 3%;
 }
 
 .doctorName {
   font-family: futura;
   font-size: 35px;
   font-weight: 600;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: -0.5%;
+}
+
+.doctorMajor {
+  font-family: "Poppins", sans-serif;
+  padding-top: 0px;
+  margin-top: -2%;
+  font-size: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: -0.4%;
 }
 
 .doctorInfo {
-  font-family: "Poppins", sans-serif;
+  width: 498.4px;
+  height: 97px;
+  padding-top: 0px;
+  margin-top: -2%;
+  color: #404040;
+  font-family: Poppins;
+  font-size: 15.1px;
+  font-weight: 300;
+  line-height: 24.16px;
+  text-align: left;
+}
+
+.button-container {
+  text-align: left;
+  max-height: 250px;
+}
+
+.price {
+  font-family: Futura;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: -2%;
+}
+
+.rating {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: -2%;
+  margin-top: -20%;
+}
+
+.bookButtun {
+  font-family: Futura;
+  font-size: 18.83px;
+  font-weight: 500;
+  width: 256px;
+  height: 69px;
+  margin-top: 18%;
+  border-radius: 3.27px;
+  background-color: #1D63D3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.bookButtun:hover {
+  background-color: #0e4c8f;
 }
