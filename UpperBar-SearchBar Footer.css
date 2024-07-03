@@ -1,7 +1,12 @@
 /* Header Style */
 
+@font-face {
+    font-family:futura ;
+    src: url("./Fonts/futura/Futura Book font.ttf");
+}
+
 body {
-    background-color: rgba(181, 198, 240, 0.1); /*page color*/
+    background-color: rgba(181, 198, 240, 0.1); /*page*/
 }
 
 nav {
@@ -23,7 +28,7 @@ nav {
 
 nav .SECOND {
     color: rgb(16, 1, 92);
-    font-weight: bold;
+    font-family:"Aclonica";
     font-size: 2em;
     text-transform: uppercase;
     text-decoration: none;
@@ -185,7 +190,6 @@ h1,p,.Booking-an-appointment{
             margin: 20px 0;
             position: relative;
         }
-
         .dashed-line::before {
             content: '---';
             position: absolute;
