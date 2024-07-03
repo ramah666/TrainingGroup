@@ -1,38 +1,31 @@
 /* */
 
 .inline-grid-container {
-    display: inline-grid;
-    grid-template-columns: auto 1fr auto; /* Adjust column widths as needed */
-    grid-gap: 10px; /* Adjust spacing between elements */
-    align-items: center; /* Vertically center elements */
+    display:  inline-flex;
+  align-items: center;
   }
-  
+
   .circle-image {
-    width: 50px; /* Adjust circle size */
-    height: 50px; /* Adjust circle size */
-    border-radius: 50%;
-    background-color: #ddd; /* Set default background color */
-  }
-  
-  /* Optional: Add an icon or image inside the circle */
-  .circle-image:after {
-    content: ""; /* Placeholder content for icons */
-    display: inline-block;
-    width: 30px; /* Adjust icon size */
-    height: 30px; /* Adjust icon size */
-    background-image: url("path/to/your/icon.png"); /* Replace with your icon URL */
-    background-repeat: no-repeat;
-    background-position: center; /* Center the icon within the circle */
+    max-width: 200px; /* Adjust circle size */
+    max-height: 200px;
+    border-radius: 50% ;
+    margin-right: 20px; /* Add spacing between image and other elements */
   }
   
   .text-container {
-    text-align: center; /* Center text horizontally */
+    text-align: left;
+    font-family:'Futura', Arial Narrow, Arial, sans-serif;
+    position: relative;
+    font-size: 15.1px;
+    font-weight: 300;
+    line-height: 24.16px;
+    margin-right: 2.8cm; /* Add spacing between text and button */
   }
   
   .button-container {
     text-align: center; /* Center button horizontally */
   }
-  
+
   button {
     background-color: #007bff;
     color: white;
