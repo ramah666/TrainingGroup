@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOND OPI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('login-section').style.display = 'none';
+            document.getElementById('forgot-password-section').style.display = 'none';
+            document.getElementById('set-new-password-section').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function sendOTP() {
+            // Functionality to send OTP
+            document.getElementById('resend-otp').style.display = 'block';
+            // Show Set New Password Section after sending OTP
+            showSection('set-new-password-section');
+        }
+
+        function saveNewPassword() {
+            // Functionality to save new password
+            alert('Password has been changed successfully.');
+            showSection('login-section');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle-2"></div>
+        <header>
+            <nav>
+                <a href="#" class="SECOND">SECOND <span class="opi">OPI</span></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Find A Doctor</a></li>
+                    <li><a href="#">Specialties</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Rama</a></li>
+                    <li><a href="#" class="SignUp">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div id="login-section" class="login-container">
+                <h1>Log In to Your Account</h1>
+                <form class="login-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Please enter your Email">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Please enter your Password">
+                    <a href="#" onclick="showSection('forgot-password-section')">Forgot Password?</a>
+                    <button type="button">Log In</button>
+                    <p>Or</p>
+                    <div class="oauth-buttons">
+                        <a class="google-button" href="https://accounts.google.com/signin">
+                            <img src="https://almadina.tv/wp-content/uploads/2022/02/unnamed-512x470.png" alt="Google Logo">
+                            Sign In With Google
+                        </a>
+                        <a class="apple-button" href="https://appleid.apple.com/">
+                            <img src="https://w7.pngwing.com/pngs/912/682/png-transparent-apple-logo-brand-apple-company-trademark-heart-thumbnail.png" alt="Apple Logo">
+                            Sign In With Apple
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <div id="forgot-password-section" class="login-container" style="display: none;">
+                <h2>Forgot Password?</h2>
+                <p>Kindly Provide Your Email Address; We'll Send an OTP to Reset Your Password</p>
+                <label for="forgot-email">Email</label>
+                <input type="email" id="forgot-email" placeholder="Please enter your Email">
+                <button type="button" onclick="sendOTP()">Send OTP</button>
+                <p id="resend-otp" style="display: none;"><a href="#" onclick="sendOTP()" style="color: blue;">Resend OTP</a></p>
+            </div>
+
+            <div id="set-new-password-section" class="login-container" style="display: none;">
+                <h2>Set New Password</h2>
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" placeholder="Please enter your Password">
+                <label for="confirm-password">Confirm New Password</label>
+                <input type="password" id="confirm-password" placeholder="Please Confirm your password">
+                <button type="button" onclick="saveNewPassword()">Save</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+            <div class="additional-info">
+                <div class="info-block">
+                    <h2>Find care</h2>
+                    <ul class="locations">
+                        <li>Bangalore</li>
+                        <li>Mumbai</li>
+                        <li>Delhi</li>
+                        <li>Ahmedabad</li>
+                        <li>Indore</li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h2>Top Specialties</h2>
+                    <ul class="specialties">
+                        <li>Therapist</li>
+                    </ul>
+                </div>
+                <div class="info-block">
+                    <h2>Chota Hospital (P) Ltd</h2>
+                    <p>WeWork, DLF Forum, Cybercity, Phase III, Gurugram, Haryana 122002</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
