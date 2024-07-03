@@ -1,5 +1,9 @@
 /* Header Style */
 
+body {
+    background-color: rgba(181, 198, 240, 0.1); /*page color*/
+}
+
 nav {
     background-color: #ffffff;
     position: fixed; 
@@ -11,9 +15,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: rgb(0, 0, 0);
     z-index: 3; 
-    border-bottom: #000 solid 1px;
+    border-bottom: #151414 solid 0.5px;
 }
 
 
