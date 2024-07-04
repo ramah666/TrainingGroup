@@ -16,7 +16,7 @@
                 <nav>
                     <a href="#" class="SECOND">SECOND <span class="opi">OPI</span></a>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="Home.html">Home</a></li>
                         <li><a href="#">Find A Doctor</a></li>
                         <li><a href="#">Specialties</a></li>
                         <li><a href="#">About US</a></li>
@@ -24,7 +24,7 @@
                     </ul>
                 </nav>
             </header>
-            <div>
+            <div id="title">
                 <h1 class="title">Payment</h1>
                 <p>Simplify transactions with secure and seamless payment details integration.</p>
             </div>
@@ -54,8 +54,63 @@
                     <div class="line-item">Session fee: $200</div>
                     <div class="line-item">Taxes: $2</div>
                     <div class="total-amount">Total fee: $202</div>
-                    <a href="#" class="proceed-button">Proceed to Payment</a>
+                    <button class="proceed-button" onclick="confirmBooking()">Proceed to Payment</button>
                 </div>
-            </div>
+                
+            </div><div class="confirmation-message" id="confirmation-message">
+                    <h2>Booking is confirmed!</h2>
+                    <p>Your appointment with the doctor is confirme!<br> Get read for your consultation</p>
+                    <div class="button-container">
+                        <a href="view-appointment.html" class="confirmation-button">View Appointment</a>
+                        <a href="Home.html" class="confirmation-button">Home</a>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="footer-container">
+                        <a href="#" class="SECONDfooter">SECOND <span class="opifooter">OPI</span></a>
+                        <div class="footer-content">
+                            <div class="footer-column">
+
+                                <a href="#">Home</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Terms of Service</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Refund Policy</a>
+                            </div>
+                            <div class="footer-column">
+                                <h2>Find care</h2>
+                                <ul class="locations">
+                                    <li>Bangalore</li>
+                                    <li>Mumbai</li>
+                                    <li>Delhi</li>
+                                    <li>Ahmedabad</li>
+                                    <li>Indore</li>
+                                </ul>
+                            </div>
+                            <div class="footer-column">
+                                <h2>Top Specialties</h2>
+                                <ul class="specialties">
+                                    <li>Therapist</li>
+                                </ul>
+                            </div>
+                            <div class="footer-column">
+                                <h2>Chota Hospital (P) Ltd</h2>
+                                <p>WeWork, DLF Forum, Cybercity, Phase III, Gurugram, Haryana 122002</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+                <script>
+                    function confirmBooking() {
+                        //hide
+                        document.querySelector('.Payment').style.display = 'none';
+                        document.getElementById('title').style.display = 'none';
+
+                        //show
+                        document.getElementById('confirmation-message').style.display = 'block';
+                    }
+                </script>
         </body>
  </html>

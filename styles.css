@@ -64,61 +64,97 @@ nav a {
 nav .SignUp {
     background: #f7f8fa;
 }
-
-footer {
-    padding: 70px 0;
+.footer {
     background-color: #C5DCFF;
+    padding: 20px;
+    border-top: 1px solid #e7e7e7;
+    font-family: Arial, sans-serif;
 }
-.container{
-    max-width: 1170px;
-    margin:auto;
-  }
-  .row{
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-    list-style: none;
-  }
-  .footer-col{
-    width: 25%;
-    padding: 0 15px;
- }
- 
-.footer-col h4{
-    font-size: 18px;
-    color: #000000;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-  }
-  
-.footer-col h4::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
+    flex-direction: row;
+    align-items: flex-start;
 }
-.footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
-}
-.footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
+
+
+
+
+.SECONDfooter {
+    color: rgb(16, 1, 92);
+    font-family:"Aclonica";
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
     text-decoration: none;
-    font-weight: 300;
-    color: #000000;
+    letter-spacing: .5px;
+    align-self: center;
+    text-align: left;
+    margin-left: -50px;
+}
+
+.opifooter {
+    color: rgb(16, 1, 92);
+    font-family:"Aclonica";
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5px;
+    align-self: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
     display: block;
-    transition: all 0.3s ease;
-  }
-  .footer-col ul li a:hover{
-    color: #ffffff;
-    padding-left: 8px;
-  }
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+}
 
 .circle {
     position: absolute;
