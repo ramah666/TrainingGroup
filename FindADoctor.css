@@ -107,11 +107,10 @@ h1,p,.Booking-an-appointment{
   z-index: 2; 
 }
 
-/* */
-/* Search Bar Style */
+/*Search bar for the "find a doctor page"*/
 .search-bar {
   position: relative;
-  bottom: -30px; 
+  border: none;
   left: 50%;
   padding: 10px;
   transform: translateX(-50%);
@@ -121,52 +120,9 @@ h1,p,.Booking-an-appointment{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 2; 
 }
-/* */
-
-.speciality-dropdown, .search-input, .search-button {
-  padding: 10px;
-  border: none;
-  outline: none;
-  margin: 5px;
-  
-}
-
-.speciality-dropdown {
-  flex: 1; 
-  background-color: #e4e8ed;
-
-}
-.speciality-dropdown option{
-  background-color: #e4e8ed;
-  padding: 10px;
-  border: none;
-  outline: none;
-  margin: 5px;
-}
-/* Search Input*/
-.search-input {
-  flex: 3; 
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-
-}
-
-.search-button {
-  flex: .5;
-  background: #007BFF;
-  color: white;
-  cursor: pointer;
-  padding: 0;
-  font-size: 14px; 
-}
-
-.search-button:hover {
-  background: #0056b3;
-}
 header{
 
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .inline-grid-container {
   display: flex;
