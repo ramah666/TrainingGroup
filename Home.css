@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /* */
 
 
@@ -12,66 +8,9 @@ body {
     position: relative;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-
-nav {
-    background-color: #ffffff;
-    position: relative;
-    top: 0;
-    left: 0;
-    padding: 10px 10px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    display: fixed;
-    z-index: 2; 
-}
-
-nav .SECOND {
-    color: rgb(16, 1, 92);
-    font-weight: bold;
-    font-size: 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .5px;
-}
-
-nav .opi {
-    color: rgb(16, 1, 92);
-    font-weight: bold;
-    font-size: .5em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .5px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav li {
-    list-style: none;
-    margin-left: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: black;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-nav .SignUp {
-    background: rgb(43, 43, 251);
-}
 
 footer {
     text-align: center;
@@ -84,6 +23,7 @@ footer {
 
 
 .main {
+    margin-top: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,62 +85,6 @@ h1,p,.Booking-an-appointment{
 h1{
     font-size: 40px;
     font-weight: 700;
-}
-.search-bar {
-    position: absolute;
-    bottom: -30px; 
-    left: 50%;
-    padding: 10px;
-    transform: translateX(-50%);
-    display: flex;
-    width: 90%; 
-    background: white;
-    border: 2px solid ;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 2; 
-}
-
-.speciality-dropdown, .search-input, .search-button {
-    padding: 10px;
-    border: none;
-    outline: none;
-    margin: 5px;
-    
-}
-
-.speciality-dropdown {
-    flex: 1; 
-    background-color: #e4e8ed;
-
-}
-.speciality-dropdown option{
-    background-color: #e4e8ed;
-    padding: 10px;
-    border: none;
-    outline: none;
-    margin: 5px;
-}
-
-.search-input {
-    flex: 3; 
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-
-}
-
-.search-button {
-    flex: .5;
-    background: #007BFF;
-    color: white;
-    cursor: pointer;
-    padding: 0;
-    font-size: 14px; 
-}
-
-
-.search-button:hover {
-    background: #0056b3; /* Darken the button on hover */
 }
 
 /*------ top doctors section------*/

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SECOND OPI</title>
-    <link rel="stylesheet" href="styleMacBook Air1.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="UpperBar-SearchBar Footer.css">
+
     
 </head>
 
@@ -18,11 +20,11 @@
                     
                     <a href="#" class="SECOND">SECOND <span class="opi">OPI</span></a>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Find A Doctor</a></li>
-                        <li><a href="#">Specialties</a></li>
-                        <li><a href="#">About US</a></li>
-                        <li><a href="#" class="SignUp">Sign Up</a></li>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="FindADoctor.html">Find A Doctor</a></li>
+                        <li><a href="Specialties.html">Specialties</a></li>
+                        <li><a href="AboutUs.html">About US</a></li>
+                        <li><a href="SingUp.html" class="SignUp">Sign Up</a></li>
                     </ul>
                 </nav>
             </header>
@@ -80,7 +82,7 @@
                         <h3>Dr. Sara Ali Khan</h3>
                         <p>Renowned neurologist known for her patient-centered approach.</p>
                         <button class="Booking-an-appointment">Book An Appointment</button>
-                    </div>
+                    </div> 
                 </div>
             </section>
         </div>
@@ -172,7 +174,11 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        document.querySelector('.Booking-an-appointment').addEventListener('click', function() {
+            window.location.href = "Booking-Appointment.html";
+        });
+    </script>
     </body>
     </html>
     <!---->

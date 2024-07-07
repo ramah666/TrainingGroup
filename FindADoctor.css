@@ -1,5 +1,168 @@
 /* */
 
+nav {
+  background-color: #ffffff;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  padding: 5px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  z-index: 3; 
+  border-bottom: #151414 solid 0.5px;
+}
+
+
+nav .SECOND {
+  color: rgb(16, 1, 92);
+  font-family:"Aclonica";
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .5px;
+}
+
+nav .opi {
+  color: rgb(16, 1, 92);
+  font-family:"Aclonica";
+  font-weight: bold;
+  font-size: .5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .5px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  border-radius: 10px;
+}
+
+nav .SignUp {
+  background: rgb(43, 43, 251);
+}
+
+
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home-container1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 20px; 
+  background-color: blue;
+  color: white; 
+  padding: 0;
+  text-align: center;
+  position: relative;
+  
+}
+h1,p,.Booking-an-appointment{
+  padding: 15px;
+  margin: 30px;
+  z-index: 2; 
+}
+.Booking-an-appointment{
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 8px;
+  border : none;
+  margin-left: 50px;
+}
+.home-container2{
+ 
+  text-align: left;
+}
+.home-container1 img {
+  max-width: 50%; 
+  z-index: 2; 
+}
+
+/* */
+/* Search Bar Style */
+.search-bar {
+  position: relative;
+  bottom: -30px; 
+  left: 50%;
+  padding: 10px;
+  transform: translateX(-50%);
+  display: flex;
+  width: 90%; 
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2; 
+}
+/* */
+
+.speciality-dropdown, .search-input, .search-button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  
+}
+
+.speciality-dropdown {
+  flex: 1; 
+  background-color: #e4e8ed;
+
+}
+.speciality-dropdown option{
+  background-color: #e4e8ed;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+/* Search Input*/
+.search-input {
+  flex: 3; 
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+
+}
+
+.search-button {
+  flex: .5;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px; 
+}
+
+.search-button:hover {
+  background: #0056b3;
+}
+header{
+
+  margin-bottom: 50px;
+}
 .inline-grid-container {
   display: flex;
   justify-content: space-evenly;
