@@ -1,6 +1,10 @@
 
 /* */
 
+@font-face {
+    font-family:futura ;
+    src: url("./Fonts/futura/Futura Book font.ttf");
+}
 
 body {
     font-family: verdana;
