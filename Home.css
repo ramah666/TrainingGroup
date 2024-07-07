@@ -32,6 +32,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .home-container1 {
@@ -95,6 +96,7 @@ h1{
 .top-doctors {
     text-align: center;
     margin: 50px 0;
+    
 }
 
 .top-doctors h2 {
